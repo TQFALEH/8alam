@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="ar" dir="rtl" >
 
-<head>
+<head >
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-6PXN38Q3W0"></script>
     <script>
@@ -42,7 +42,8 @@
     }
 </style>
 
-<body class="">
+<body  oncontextmenu="return false">
+
     <nav class="navbar  shadow-lg  " style="background-color:#398b79;;">
         <div class="container">
             <a class="navbar-brand text-white " id="logo" href="index.html">
@@ -272,6 +273,46 @@
         </script>
     <script src="assest/main.js"></script>
     <script src="assest/gpaCalc.js"></script>
+    <script type="text/javascript">
+        function mousehandler(e) {
+            var myevent = (isNS) ? e : event;
+            var eventbutton = (isNS) ? myevent.which : myevent.button;
+            if ((eventbutton == 2) || (eventbutton == 3)) return false;
+        }
+        document.oncontextmenu = mischandler;
+        document.onmousedown = mousehandler;
+        document.onmouseup = mousehandler;
+        function disableCtrlKeyCombination(e) {
+            var forbiddenKeys = new Array("a", "s", "c", "x", "u");
+            var key;
+            var isCtrl;
+            if (window.event) {
+                key = window.event.keyCode;
+                //IE
+                if (window.event.ctrlKey)
+                    isCtrl = true;
+                else
+                    isCtrl = false;
+            }
+            else {
+                key = e.which;
+                //firefox
+                if (e.ctrlKey)
+                    isCtrl = true;
+                else
+                    isCtrl = false;
+            }
+            if (isCtrl) {
+                for (i = 0; i < forbiddenKeys.length; i++) {
+                    //case-insensitive comparation
+                    if (forbiddenKeys[i].toLowerCase() == String.fromCharCode(key).toLowerCase()) {
+                        return false;
+                    }
+                }
+            }
+            return true;
+        }
+    </script>
 
 
 
