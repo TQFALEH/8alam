@@ -1,1 +1,180 @@
-const _0x2ee24a = _0x2696; (function (_0x43de92, _0x20bf03) { const _0x3ceb20 = _0x2696, _0xc4b29 = _0x43de92(); while (!![]) { try { const _0x3f789f = -parseInt(_0x3ceb20(0xa2)) / 0x1 * (-parseInt(_0x3ceb20(0x8c)) / 0x2) + -parseInt(_0x3ceb20(0x9c)) / 0x3 + -parseInt(_0x3ceb20(0xa0)) / 0x4 + -parseInt(_0x3ceb20(0x8e)) / 0x5 * (-parseInt(_0x3ceb20(0x82)) / 0x6) + parseInt(_0x3ceb20(0xa6)) / 0x7 + -parseInt(_0x3ceb20(0x98)) / 0x8 + -parseInt(_0x3ceb20(0x9a)) / 0x9 * (parseInt(_0x3ceb20(0xa1)) / 0xa); if (_0x3f789f === _0x20bf03) break; else _0xc4b29['push'](_0xc4b29['shift']()); } catch (_0x3daa4b) { _0xc4b29['push'](_0xc4b29['shift']()); } } }(_0xcb5b, 0xe68f9)); var x = document[_0x2ee24a(0x8d)](_0x2ee24a(0xa4)); let tabel = document[_0x2ee24a(0x86)](_0x2ee24a(0xaa)), hour = document[_0x2ee24a(0x90)](_0x2ee24a(0x83)), dgree = document[_0x2ee24a(0x90)](_0x2ee24a(0x9b)), totalHours = Number(0x0); function _0x2696(_0x1d8f23, _0x43cd2b) { const _0xcb5b18 = _0xcb5b(); return _0x2696 = function (_0x269638, _0x478235) { _0x269638 = _0x269638 - 0x81; let _0x41b03d = _0xcb5b18[_0x269638]; return _0x41b03d; }, _0x2696(_0x1d8f23, _0x43cd2b); } totalHours = 0x0; function countHours() { const _0x45443b = _0x2ee24a; let _0x5c7b60 = document[_0x45443b(0x8d)]('cHours')[_0x45443b(0xa3)], _0x1079fd = Number(0x0); _0x1079fd = 0x0; for (let _0x3d069d = 0x0; _0x3d069d < table[_0x45443b(0x99)](_0x45443b(0x95))[_0x45443b(0x81)]; _0x3d069d++) { hour[_0x3d069d][_0x45443b(0xa3)] ? _0x1079fd += parseInt(document[_0x45443b(0x90)](_0x45443b(0x83))[_0x3d069d][_0x45443b(0xa3)]) : 0x0; } let _0x3a1644 = _0x1079fd + _0x5c7b60, _0x7b77e3 = parseInt(_0x5c7b60), _0x48edd5 = NaN; _0x48edd5 = _0x1079fd + _0x7b77e3; if (isNaN(_0x48edd5)) _0x48edd5 = ''; return document[_0x45443b(0x8d)](_0x45443b(0x8a))[_0x45443b(0xa8)] = '<p\x20\x22\x20style=\x22font-size:\x2019px;\x22>\x20مجموع\x20الساعات\x20:\x20' + _0x48edd5 + _0x45443b(0x89), _0x48edd5; } function Calgrade() { const _0x2aae83 = _0x2ee24a; let _0x12b84e = 0x0, _0x342f5f = 0x0, _0x28d147 = 0x0, _0x3157a1 = NaN, _0x217a90 = NaN, _0x4632ed = NaN, _0xbf192d = NaN; for (let _0x4566bb = 0x0; _0x4566bb < table[_0x2aae83(0x99)](_0x2aae83(0x95))['length']; _0x4566bb++) { x[_0x2aae83(0x8f)] === !![] ? (_0x28d147 = (dgree[_0x4566bb]['value'] - 0x1) * hour[_0x4566bb][_0x2aae83(0xa3)], _0x342f5f = _0x342f5f + _0x28d147, hour[_0x4566bb][_0x2aae83(0xa3)] ? _0x12b84e += parseInt(hour[_0x4566bb][_0x2aae83(0xa3)]) : 0x0) : (_0x28d147 = dgree[_0x4566bb][_0x2aae83(0xa3)] * hour[_0x4566bb][_0x2aae83(0xa3)], _0x342f5f = _0x342f5f + _0x28d147, hour[_0x4566bb][_0x2aae83(0xa3)] ? _0x12b84e += parseInt(hour[_0x4566bb][_0x2aae83(0xa3)]) : 0x0); } _0x3157a1 = _0x342f5f / _0x12b84e; if (isNaN(_0x3157a1)) _0x3157a1 = ''; _0xbf192d = cla(_0x342f5f), _0x4632ed = countHours(), _0x217a90 = _0xbf192d / _0x4632ed; if (isNaN(_0x217a90) || _0x217a90 === Infinity) _0x217a90 = ''; document['getElementById'](_0x2aae83(0x94))[_0x2aae83(0xa8)] = _0x2aae83(0x87) + _0x3157a1['toFixed'](0x2) + '\x20' + gradeing(_0x3157a1) + _0x2aae83(0x89), document[_0x2aae83(0x8d)](_0x2aae83(0xa5))[_0x2aae83(0xa8)] = _0x2aae83(0x91) + _0xbf192d[_0x2aae83(0x8b)](0x2) + _0x2aae83(0x89), document[_0x2aae83(0x8d)]('culmGpa')['innerHTML'] = _0x2aae83(0x9e) + _0x217a90[_0x2aae83(0x8b)](0x2) + '\x20' + gradeing(_0x217a90) + _0x2aae83(0x89); } function cla(_0x1728bf) { const _0x111da0 = _0x2ee24a; let _0x57e090 = NaN, _0x5c9ba3 = document[_0x111da0(0x8d)]('cGpa')[_0x111da0(0xa3)], _0x481e15 = document[_0x111da0(0x8d)](_0x111da0(0x84))[_0x111da0(0xa3)]; return _0x57e090 = _0x5c9ba3 * _0x481e15, _0x57e090 + _0x1728bf; } var count = 0x5; function addRow() { const _0xbf32c9 = _0x2ee24a; var _0x436683 = tabel[_0xbf32c9(0x93)](-0x1), _0x93699f = _0x436683['insertCell'](0x0), _0x43176a = _0x436683[_0xbf32c9(0x9d)](0x1), _0x4e42d6 = _0x436683[_0xbf32c9(0x9d)](0x2); _0x93699f[_0xbf32c9(0xa8)] = _0xbf32c9(0x96) + count + _0xbf32c9(0x97), _0x43176a[_0xbf32c9(0xa8)] = _0xbf32c9(0x88), _0x4e42d6[_0xbf32c9(0xa8)] = '<select\x20class=\x22subjectRating\x20form-control\x22\x20oninput=\x22Calgrade()\x22\x20style=\x22width:\x2098px;\x22>\x20<option\x20value=\x22\x22>الدرجة</option>\x20\x20\x20<option\x20option\x20value\x20=\x205\x20>\x20A\x20+|\x2095\x20-\x20100</option\x20>\x20<option\x20value=4.75\x20>\x20A\x20|\x2090\x20-\x2094</option\x20>\x20<option\x20value=4.5\x20>\x20B\x20+\x20|\x2085\x20-\x2089</option\x20>\x20<option\x20value=4\x20>\x20B\x20|\x2080\x20-\x2084</option\x20>\x20<option\x20value=3.5\x20>\x20C\x20+\x20|\x2075\x20-\x2079</option\x20>\x20<option\x20value=3\x20>\x20C\x20|\x2070\x20-\x2074</option\x20>\x20<option\x20value=2.5\x20>\x20D\x20+\x20|\x2065\x20-\x2069</option\x20>\x20<option\x20value=2\x20>\x20D\x20|\x2060\x20-\x2064</option\x20>\x20<option\x20value=1\x20>\x20F</option\x20></select\x20>\x20', count++; } function removeRow() { const _0x4e4ab4 = _0x2ee24a; document[_0x4e4ab4(0x86)](_0x4e4ab4(0xaa))[_0x4e4ab4(0xa7)](-0x1), count--; } function gradeing(_0x1a97ea) { const _0x499ef4 = _0x2ee24a; if (x[_0x499ef4(0x8f)] === !![]) { if (_0x1a97ea >= 3.5) de = _0x499ef4(0x9f); else { if (_0x1a97ea >= 2.75) de = _0x499ef4(0x85); else { if (_0x1a97ea >= 1.75) de = 'جيد\x20'; else _0x1a97ea >= 0x1 && (de = _0x499ef4(0xa9)); } } return de; } else { if (_0x1a97ea >= 4.5) de = _0x499ef4(0x9f); else { if (_0x1a97ea >= 3.75) de = 'جيد\x20جداً'; else { if (_0x1a97ea >= 2.75) de = _0x499ef4(0x92); else _0x1a97ea >= 0x2 && (de = _0x499ef4(0xa9)); } } return de; } } function _0xcb5b() { const _0xa2d66b = ['ممتاز', '667836ZNCvUm', '410630hYuyxz', '1FuoqQR', 'value', 'myCheck', 'sumPoint', '5595240bufyHd', 'deleteRow', 'innerHTML', 'مقبول\x20', 'table', 'length', '6YRKgAH', 'numberOfHours', 'cHours', 'جيد\x20جداً', 'querySelector', '<p\x20id=\x22semGpa\x22\x20\x20style=\x22font-size:\x2019px;\x22>\x20معدلك\x20الفصلي\x20:', '<select\x20type=\x22number\x22\x20class=\x22form-control\x20\x20numberOfHours\x22\x20oninput=\x22\x20countHours(),Calgrade()\x22style\x20=\x20\x22width:\x2090px;height:\x2038px;\x22\x20><option\x20value=\x22\x22>الساعات</option>\x20<option\x20value=1\x20>\x201</option\x20><option\x20value=2\x20>\x202</option\x20>\x20<option\x20value=3\x20>\x203</option\x20><option\x20value=4\x20>\x204</option\x20>\x20</select\x20>', '</p>', 'tHour', 'toFixed', '2902672gtnomW', 'getElementById', '6876785tlydLZ', 'checked', 'getElementsByClassName', '<p\x20id=\x22sumPoint\x22\x20\x20style=\x22font-size:\x2019px;\x22>عدد\x20النقاط\x20:', 'جيد\x20', 'insertRow', 'semGpa', 'tbody\x20tr', '<th\x20class=\x22table\x20lead\x20text-danger\x22><strong>', '</strong>\x20</th>', '1487136PUHNnG', 'querySelectorAll', '234aKFifH', 'subjectRating', '3783441UugmqS', 'insertCell', '<p\x20id=\x22culmGpa\x22\x20\x20style=\x22font-size:\x2019px;\x22>معدلك\x20التراكمي\x20:']; _0xcb5b = function () { return _0xa2d66b; }; return _0xcb5b(); }
+
+
+var x = document.getElementById("myCheck");
+let tabel = document.querySelector('table');
+let hour = document.getElementsByClassName('numberOfHours');
+let dgree = document.getElementsByClassName('subjectRating');
+
+
+/// حساب الساعات 
+let totalHours = Number(0);// لتحويله الى رقم عشان اقدر اجمع 
+totalHours = 0;
+function countHours() {
+    let cureentHours = document.getElementById('cHours').value;
+    let totalHours = Number(0);// لتحويله الى رقم عشان اقدر اجمع 
+    totalHours = 0;
+    for (let index = 0; index < table.querySelectorAll("tbody tr").length; index++) {
+        hour[index].value ?
+            totalHours += parseInt(document.getElementsByClassName('numberOfHours')[index].value)
+            : 0
+
+
+    }
+
+
+    let t = totalHours + cureentHours;
+    let b = parseInt(cureentHours);
+    let sumAllHours = NaN;
+    sumAllHours = totalHours + b;
+    if (isNaN(sumAllHours)) sumAllHours = "";
+    document.getElementById('tHour').innerHTML = '<p " style="font-size: 19px;"> مجموع الساعات : ' + sumAllHours + '</p>'
+
+    return sumAllHours;
+}
+
+// حساب عدد الدرجات الكلي 
+
+function Calgrade() {
+    let allHours = 0;
+    let points = 0;
+    let sumi = 0;
+    let semesterGpa = NaN;
+    let culmutivrGpa = NaN;
+    let sumHours = NaN;
+    let sumPoints = NaN;
+    for (let i = 0; i < table.querySelectorAll("tbody tr").length; i++) {
+        if (x.checked === true) {
+            sumi = ((dgree[i].value - 1) * hour[i].value);
+            points = points + sumi;
+
+            hour[i].value ?
+                allHours += parseInt(hour[i].value)
+                : 0
+        } else {
+
+
+            sumi = (dgree[i].value * hour[i].value);
+            points = points + sumi;
+
+            hour[i].value ?
+                allHours += parseInt(hour[i].value)
+                : 0
+
+
+
+
+
+        }
+    }
+    // حساب المعدل الفصلي 
+    semesterGpa = (points / allHours);
+    if (isNaN(semesterGpa)) semesterGpa = "";
+
+
+
+
+    ///////////////////////////////////////////
+
+    sumPoints = cla(points);
+    sumHours = countHours();
+    culmutivrGpa = sumPoints / sumHours;
+    if (isNaN(culmutivrGpa) || culmutivrGpa === Infinity) culmutivrGpa = "";
+
+    document.getElementById("semGpa").innerHTML = '<p id="semGpa"  style="font-size: 19px;"> معدلك الفصلي :' + semesterGpa.toFixed(2) + " " + gradeing(semesterGpa) + '</p>';
+    document.getElementById('sumPoint').innerHTML = '<p id="sumPoint"  style="font-size: 19px;">عدد النقاط :' + sumPoints.toFixed(2) + '</p>';
+    document.getElementById('culmGpa').innerHTML = '<p id="culmGpa"  style="font-size: 19px;">معدلك التراكمي :' + culmutivrGpa.toFixed(2) + " " + gradeing(culmutivrGpa) + '</p>'
+
+
+}
+
+
+
+////حساب نقاط المعدل الحالي
+
+function cla(a) {
+    let currentPoints = NaN;
+    let cureentGpa = document.getElementById('cGpa').value;
+    let cureentHours = document.getElementById('cHours').value;
+
+
+    currentPoints = cureentGpa * cureentHours;
+
+    return currentPoints + a;
+}
+// اضافة صف جديد
+var count = 5;
+
+function addRow() {
+    var row = tabel.insertRow(-1);
+    var cell1 = row.insertCell(0);
+    var cell2 = row.insertCell(1);
+    var cell3 = row.insertCell(2);
+
+
+    cell1.innerHTML = '<th class="table lead text-danger"><strong>' + count + '</strong> </th>';
+    cell2.innerHTML = '<select type="number" class="form-control  numberOfHours" oninput=" countHours(),Calgrade()"style = "width: 90px;height: 38px;" ><option value="">الساعات</option> <option value=1 > 1</option ><option value=2 > 2</option > <option value=3 > 3</option ><option value=4 > 4</option > </select >';
+    cell3.innerHTML = '<select class="subjectRating form-control" oninput="Calgrade()" style="width: 98px;"> <option value="">الدرجة</option>   <option option value = 5 > A +| 95 - 100</option > <option value=4.75 > A | 90 - 94</option > <option value=4.5 > B + | 85 - 89</option > <option value=4 > B | 80 - 84</option > <option value=3.5 > C + | 75 - 79</option > <option value=3 > C | 70 - 74</option > <option value=2.5 > D + | 65 - 69</option > <option value=2 > D | 60 - 64</option > <option value=1 > F</option ></select > '
+
+    count++;
+}
+function removeRow() {
+
+    document.querySelector("table").deleteRow(-1);
+
+    count--;
+
+}
+
+// حذف صف جديد
+function gradeing(g) {
+
+    if (x.checked === true) {
+        if (g >= 3.5) {
+            de = "ممتاز";
+        }
+        else if (g >= 2.75) {
+            de = "جيد جداً";
+        }
+        else if (g >= 1.75) {
+            de = "جيد ";
+        }
+        else if (g >= 1) {
+            de = "مقبول ";
+        }
+        return de;
+
+    }
+
+
+    else {
+        if (g >= 4.5) {
+            de = "ممتاز";
+        }
+        else if (g >= 3.75) {
+            de = "جيد جداً";
+        }
+        else if (g >= 2.75) {
+            de = "جيد ";
+        }
+        else if (g >= 2) {
+            de = "مقبول ";
+        }
+        return de;
+
+    }
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
