@@ -89,10 +89,12 @@
 
     <!--------------------------------------END HERO----------------------------------------------------->
     <style>
-        #defaultCheck1 {
-            border-color: white;
+   
 
-        }
+#mycheck{
+    border-radius: 30px;
+}
+        
     </style>
     <section>
         <div class="container " id="bn">
@@ -103,33 +105,34 @@
                         <label for="">المعدل الحالي</label>
                     </div>
                     <div class="form-floating  ">
-                        <input type="number" oninput="cla(),countHours(),Calgrade()" class="form-control" id="cHours"
+                        <input type="number" oninput="cla(),countHours(),Calgrade()" class="form-control " id="cHours"
                             placeholder=".">
                         <label for=""> الساعات المكتسبة</label>
                     </div>
 
                     <style>
-
+                           
                     </style>
                     <div class="row container mt-4  d-flex justify-content-center align-items-center" id="bvno">
                         <div class=" col-sm-12  d-flex justify-content-center align-items-center ">
-                            <div class="form-check  mb-3" style="font-size: 18px;">
-                                <input onchange="countHours(),Calgrade(),gradeing()" class="form-check-input bg-transparent "   type="checkbox"
+                            <div class="form-check  mb-3">
+                                <input onchange="countHours(),Calgrade(),gradeing()" class="form-check-input  border fs-5 bg-transparent "   type="checkbox"
                                     id="myCheck">
-                                <label class="form-check-label  text-light" for="defaultCheck1">
+                                <label class="form-check-label lead text-light" for="defaultCheck1">
                                     حساب المعدل من 4
                                 </label>
                             </div>
+                            
                         </div>
                         <div class=" col-sm-12  d-flex justify-content-center align-items-center align-content-center">
 
-                            <h2 id='nido' class="text-light  lead"></h2>
+                        <h2 id='nido' class="lead text-light"></h2>
 
-                        </div>
+                        
                     </div>
                 </div>
 
-
+</div>
                 <div class="col-md-6 col-sm-12 lead ">
                     <table id="table" class="table mt-4 ">
                         <thead class="text-light lead">
