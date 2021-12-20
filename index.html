@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl" oncontextmenu="return false">
+<html lang="ar" dir="rtl" oncontextmenu="return true">
 
 <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -14,12 +14,11 @@
     <meta charset="UTF-8">
     <meta name="theme-color" content="#319197">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    
+
     <meta name="keywords"
         content=" حساب المعدل , حساب المعدل التراكمي ,احسب معدلك , احسب معدلك التراكمي بدقة , طريقة حساب المعدلات">
-     <meta name="keywords"
-     content="جامعة أم القرى,الجامعة الإسلامية,جامعة الإمام محمد بن سعود الإسلامية,جامعة الملك عبد العزيز,جامعة الملك سعود,جامعة الملك فهد للبترول والمعادن,جامعة نايف العربية للعلوم الأمنية,جامعة الملك فيصل,جامعة القصيم,جامعة طيبة,جامعة الطائف,جامعة حائل,جامعة جازان,جامعة الجوف,جامعة الباحة,جامعة تبوك,جامعة نجران,جامعة الحدود الشمالية,جامعة الأميرة نورة بنت عبد الرحمن,جامعة الملك سعود بن عبد العزيز,جامعة الإمام,جامعة الملك عبد الله للعلوم والتقنية,جامعة الأمير سطام بن عبد العزيز,جامعة شقراء,جامعة المجمعة,الجامعة السعودية الالكترونية,جامعة جدة,جامعة بيشة,كلية المدربين التقنيين,جامعة حفر الباطن,كلية الجبيل الصناعية,كلية ينبع الصناعية,كلية ينبع الجامعية"
-     >
+    <meta name="keywords"
+        content="جامعة أم القرى,الجامعة الإسلامية,جامعة الإمام محمد بن سعود الإسلامية,جامعة الملك عبد العزيز,جامعة الملك سعود,جامعة الملك فهد للبترول والمعادن,جامعة نايف العربية للعلوم الأمنية,جامعة الملك فيصل,جامعة القصيم,جامعة طيبة,جامعة الطائف,جامعة حائل,جامعة جازان,جامعة الجوف,جامعة الباحة,جامعة تبوك,جامعة نجران,جامعة الحدود الشمالية,جامعة الأميرة نورة بنت عبد الرحمن,جامعة الملك سعود بن عبد العزيز,جامعة الإمام,جامعة الملك عبد الله للعلوم والتقنية,جامعة الأمير سطام بن عبد العزيز,جامعة شقراء,جامعة المجمعة,الجامعة السعودية الالكترونية,جامعة جدة,جامعة بيشة,كلية المدربين التقنيين,جامعة حفر الباطن,كلية الجبيل الصناعية,كلية ينبع الصناعية,كلية ينبع الجامعية">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -41,19 +40,17 @@
         --main: #398b79;
     }
 
-    body 
-    {
+    body {
         background-color: var(--main);
         background-repeat: no-repeat;
         background-size: cover;
         font-family: 'Amiri', serif;
     }
 
-    #logo
-     {
+    #logo {
         font-size: 26px;
         font-weight: 200;
-     }
+    }
 </style>
 
 
@@ -92,16 +89,17 @@
 
     <!--------------------------------------END HERO----------------------------------------------------->
     <style>
+        #defaultCheck1 {
+            border-color: white;
 
-
+        }
     </style>
     <section>
         <div class="container " id="bn">
             <div class="row">
                 <div class="col-md-6 col-sm-12 mt-3 px-5 flex-column justify-content-center   ">
                     <div class="form-floating mb-3 flex-column mt-md-5 ">
-                        <input type="number" oninput="cla(),Calgrade()" class="form-control " id="cGpa"
-                            placeholder=".">
+                        <input type="number" oninput="cla(),Calgrade()" class="form-control " id="cGpa" placeholder=".">
                         <label for="">المعدل الحالي</label>
                     </div>
                     <div class="form-floating  ">
@@ -109,12 +107,26 @@
                             placeholder=".">
                         <label for=""> الساعات المكتسبة</label>
                     </div>
-                    <div class="text-center">
-                        <h2 id='nido' class="text-light mt-4  lead"></h2>
-                        <h2 id='nio' class="text-light mt-4  lead"></h2>
 
+                    <style>
+
+                    </style>
+                    <div class="row container mt-4  d-flex justify-content-center align-items-center" id="bvno">
+                        <div class=" col-sm-12  d-flex justify-content-center align-items-center ">
+                            <div class="form-check  mb-3" style="font-size: 18px;">
+                                <input onchange="countHours(),Calgrade(),gradeing()" class="form-check-input bg-transparent "   type="checkbox"
+                                    id="myCheck">
+                                <label class="form-check-label  text-light" for="defaultCheck1">
+                                    حساب المعدل من 4
+                                </label>
+                            </div>
+                        </div>
+                        <div class=" col-sm-12  d-flex justify-content-center align-items-center align-content-center">
+
+                            <h2 id='nido' class="text-light  lead">0</h2>
+
+                        </div>
                     </div>
-
                 </div>
 
 
@@ -233,10 +245,10 @@
                         </tbody>
                     </table>
                     <button class=" btn btn-outline-light " id="addRow"
-                        onclick="addRow(),countHours(),Calgrade(),cla(),gradeing()"> أضف
+                        onclick="addRow(),countHours(),Calgrade(),gradeing()"> أضف
                         مادة +<i class="bi bi-plus-square"></i> </button>
                     <button class=" btn btn-outline-light " id="removeRow"
-                        onclick="removeRow(),countHours(),Calgrade(),cla(),gradeing()">-<i
+                        onclick="removeRow(),countHours(),Calgrade(),gradeing()">-<i
                             class="bi bi-plus-square"></i> </button>
 
 
@@ -287,9 +299,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
         </script>
-    <script src="assest/main.js"></script>
     <script src="assest/e54782.js"></script>
-    <script >
+    <script>
         function mousehandler(e) {
             var myevent = (isNS) ? e : event;
             var eventbutton = (isNS) ? myevent.which : myevent.button;
