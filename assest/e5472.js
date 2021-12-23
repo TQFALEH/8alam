@@ -1,1 +1,178 @@
-const _0x28a3d1 = _0x2543; (function (_0x3f34bd, _0x5756e6) { const _0x43f59e = _0x2543, _0x399c1c = _0x3f34bd(); while (!![]) { try { const _0x1a07f3 = parseInt(_0x43f59e(0x212)) / 0x1 + parseInt(_0x43f59e(0x205)) / 0x2 + parseInt(_0x43f59e(0x203)) / 0x3 + -parseInt(_0x43f59e(0x1f3)) / 0x4 * (-parseInt(_0x43f59e(0x20d)) / 0x5) + -parseInt(_0x43f59e(0x20a)) / 0x6 * (-parseInt(_0x43f59e(0x207)) / 0x7) + -parseInt(_0x43f59e(0x1ff)) / 0x8 * (parseInt(_0x43f59e(0x204)) / 0x9) + parseInt(_0x43f59e(0x21d)) / 0xa * (-parseInt(_0x43f59e(0x1fd)) / 0xb); if (_0x1a07f3 === _0x5756e6) break; else _0x399c1c['push'](_0x399c1c['shift']()); } catch (_0xe50680) { _0x399c1c['push'](_0x399c1c['shift']()); } } }(_0x48de, 0x5021a)); function _0x48de() { const _0x2114f5 = ['55ErqRmW', 'deleteRow', '599784PiLisK', 'querySelectorAll', '</strong>\x20</th>', 'value', '650442eNHgmI', '27xeQVbZ', '1216116sqRKqQ', 'querySelector', '3515939VPGPSr', 'myCheck', '<p\x20\x22\x20style=\x22font-size:\x2019px;\x22>\x20مجموع\x20الساعات\x20:\x20', '6FoxyPD', 'culmGpa', 'cHours', '10SjNLOw', 'cGpa', 'insertCell', 'length', 'جيد\x20', '300259ThQCKO', '<p\x20id=\x22culmGpa\x22\x20\x20style=\x22font-size:\x2019px;\x22>معدلك\x20التراكمي\x20:', '<select\x20type=\x22number\x22\x20class=\x22form-control\x20\x20numberOfHours\x22\x20oninput=\x22\x20countHours(),Calgrade()\x22style\x20=\x20\x22width:\x2090px;height:\x2038px;\x22\x20><option\x20value=\x22\x22>الساعات</option>\x20<option\x20value=1\x20>\x201</option\x20><option\x20value=2\x20>\x202</option\x20>\x20<option\x20value=3\x20>\x203</option\x20><option\x20value=4\x20>\x204</option\x20>\x20</select\x20>', 'table', 'tHour', 'getElementById', 'tbody\x20tr', 'ممتاز', 'numberOfHours', 'innerHTML', '<p\x20id=\x22semGpa\x22\x20\x20style=\x22font-size:\x2019px;\x22>\x20معدلك\x20الفصلي\x20:', '2168550lBFBIB', 'sumPoint', '20008bZwuEE', '<p\x20id=\x22sumPoint\x22\x20\x20style=\x22font-size:\x2019px;\x22>عدد\x20النقاط\x20:', 'checked', 'getElementsByClassName', 'جيد\x20جداً', 'toFixed', 'insertRow', '</p>', 'مقبول\x20', '<select\x20class=\x22subjectRating\x20form-control\x22\x20oninput=\x22Calgrade()\x22\x20style=\x22width:\x2098px;\x22>\x20<option\x20value=\x22\x22>الدرجة</option>\x20\x20\x20<option\x20option\x20value\x20=\x205\x20>\x20A\x20+|\x2095\x20-\x20100</option\x20>\x20<option\x20value=4.75\x20>\x20A\x20|\x2090\x20-\x2094</option\x20>\x20<option\x20value=4.5\x20>\x20B\x20+\x20|\x2085\x20-\x2089</option\x20>\x20<option\x20value=4\x20>\x20B\x20|\x2080\x20-\x2084</option\x20>\x20<option\x20value=3.5\x20>\x20C\x20+\x20|\x2075\x20-\x2079</option\x20>\x20<option\x20value=3\x20>\x20C\x20|\x2070\x20-\x2074</option\x20>\x20<option\x20value=2.5\x20>\x20D\x20+\x20|\x2065\x20-\x2069</option\x20>\x20<option\x20value=2\x20>\x20D\x20|\x2060\x20-\x2064</option\x20>\x20<option\x20value=1\x20>\x20F</option\x20></select\x20>\x20']; _0x48de = function () { return _0x2114f5; }; return _0x48de(); } var x = document[_0x28a3d1(0x217)](_0x28a3d1(0x208)); let tabel = document['querySelector'](_0x28a3d1(0x215)), hour = document[_0x28a3d1(0x1f6)]('numberOfHours'), dgree = document['getElementsByClassName']('subjectRating'), totalHours = Number(0x0); totalHours = 0x0; function countHours() { const _0x1dbab5 = _0x28a3d1; let _0x39d3f3 = document[_0x1dbab5(0x217)](_0x1dbab5(0x20c))['value'], _0x22541e = Number(0x0); _0x22541e = 0x0; for (let _0x51a631 = 0x0; _0x51a631 < table['querySelectorAll']('tbody\x20tr')[_0x1dbab5(0x210)]; _0x51a631++) { hour[_0x51a631][_0x1dbab5(0x202)] ? _0x22541e += parseInt(document[_0x1dbab5(0x1f6)](_0x1dbab5(0x21a))[_0x51a631][_0x1dbab5(0x202)]) : 0x0; } let _0x5236ac = _0x22541e + _0x39d3f3, _0x5b7733 = parseInt(_0x39d3f3), _0x456cc3 = NaN; _0x456cc3 = _0x22541e + _0x5b7733; if (isNaN(_0x456cc3)) _0x456cc3 = ''; return document[_0x1dbab5(0x217)](_0x1dbab5(0x216))[_0x1dbab5(0x21b)] = _0x1dbab5(0x209) + _0x456cc3 + _0x1dbab5(0x1fa), _0x456cc3; } function Calgrade() { const _0x6d0b2b = _0x28a3d1; let _0x2eb287 = 0x0, _0x2d6cd6 = 0x0, _0x3bccb3 = 0x0, _0x4174f1 = NaN, _0x7cc2f5 = NaN, _0x25df9f = NaN, _0x31aeb3 = NaN; for (let _0x510d41 = 0x0; _0x510d41 < table[_0x6d0b2b(0x200)](_0x6d0b2b(0x218))['length']; _0x510d41++) { x[_0x6d0b2b(0x1f5)] === !![] ? (_0x3bccb3 = (dgree[_0x510d41][_0x6d0b2b(0x202)] - 0x1) * hour[_0x510d41][_0x6d0b2b(0x202)], _0x2d6cd6 = _0x2d6cd6 + _0x3bccb3, hour[_0x510d41][_0x6d0b2b(0x202)] ? _0x2eb287 += parseInt(hour[_0x510d41]['value']) : 0x0) : (_0x3bccb3 = dgree[_0x510d41][_0x6d0b2b(0x202)] * hour[_0x510d41][_0x6d0b2b(0x202)], _0x2d6cd6 = _0x2d6cd6 + _0x3bccb3, hour[_0x510d41][_0x6d0b2b(0x202)] ? _0x2eb287 += parseInt(hour[_0x510d41][_0x6d0b2b(0x202)]) : 0x0); } _0x4174f1 = _0x2d6cd6 / _0x2eb287; if (isNaN(_0x4174f1)) _0x4174f1 = ''; _0x31aeb3 = cla(_0x2d6cd6), _0x25df9f = countHours(), _0x7cc2f5 = _0x31aeb3 / _0x25df9f; if (isNaN(_0x7cc2f5) || _0x7cc2f5 === Infinity) _0x7cc2f5 = ''; document[_0x6d0b2b(0x217)]('semGpa')[_0x6d0b2b(0x21b)] = _0x6d0b2b(0x21c) + _0x4174f1[_0x6d0b2b(0x1f8)](0x2) + '\x20' + gradeing(_0x4174f1) + '</p>', document[_0x6d0b2b(0x217)](_0x6d0b2b(0x21e))[_0x6d0b2b(0x21b)] = _0x6d0b2b(0x1f4) + _0x31aeb3[_0x6d0b2b(0x1f8)](0x2) + _0x6d0b2b(0x1fa), document[_0x6d0b2b(0x217)](_0x6d0b2b(0x20b))[_0x6d0b2b(0x21b)] = _0x6d0b2b(0x213) + _0x7cc2f5[_0x6d0b2b(0x1f8)](0x2) + '\x20' + gradeing(_0x7cc2f5) + _0x6d0b2b(0x1fa); } function _0x2543(_0x114942, _0x428ea2) { const _0x48dedc = _0x48de(); return _0x2543 = function (_0x254357, _0x20a4c8) { _0x254357 = _0x254357 - 0x1f3; let _0x5df238 = _0x48dedc[_0x254357]; return _0x5df238; }, _0x2543(_0x114942, _0x428ea2); } function cla(_0x409adc) { const _0x144cde = _0x28a3d1; let _0x52933e = NaN, _0x4ec848 = document[_0x144cde(0x217)](_0x144cde(0x20e))['value'], _0x2d213b = document[_0x144cde(0x217)](_0x144cde(0x20c))[_0x144cde(0x202)]; return _0x52933e = _0x4ec848 * _0x2d213b, _0x52933e + _0x409adc; } var count = 0x5; function addRow() { const _0x51b0bd = _0x28a3d1; var _0x2f17b0 = tabel[_0x51b0bd(0x1f9)](-0x1), _0x2d704f = _0x2f17b0[_0x51b0bd(0x20f)](0x0), _0x4945e3 = _0x2f17b0['insertCell'](0x1), _0x8637a = _0x2f17b0[_0x51b0bd(0x20f)](0x2); _0x2d704f[_0x51b0bd(0x21b)] = '<th\x20class=\x22table\x20lead\x20text-danger\x22><strong>' + count + _0x51b0bd(0x201), _0x4945e3[_0x51b0bd(0x21b)] = _0x51b0bd(0x214), _0x8637a[_0x51b0bd(0x21b)] = _0x51b0bd(0x1fc), count++; } function removeRow() { const _0x7e26e4 = _0x28a3d1; document[_0x7e26e4(0x206)](_0x7e26e4(0x215))[_0x7e26e4(0x1fe)](-0x1), count--; } function gradeing(_0x10cd22) { const _0x6b3ab6 = _0x28a3d1; if (x[_0x6b3ab6(0x1f5)] === !![]) { if (_0x10cd22 >= 3.5) de = _0x6b3ab6(0x219); else { if (_0x10cd22 >= 2.75) de = _0x6b3ab6(0x1f7); else { if (_0x10cd22 >= 1.75) de = _0x6b3ab6(0x211); else _0x10cd22 >= 0x1 && (de = _0x6b3ab6(0x1fb)); } } return de; } else { if (_0x10cd22 >= 4.5) de = 'ممتاز'; else { if (_0x10cd22 >= 3.75) de = _0x6b3ab6(0x1f7); else { if (_0x10cd22 >= 2.75) de = _0x6b3ab6(0x211); else _0x10cd22 >= 0x2 && (de = _0x6b3ab6(0x1fb)); } } return de; } }
+
+var x = document.getElementById("myCheck");
+let tabel = document.querySelector('table');
+let hour = document.getElementsByClassName('numberOfHours');
+let dgree = document.getElementsByClassName('subjectRating');
+
+
+/// حساب الساعات 
+let totalHours = Number(0);// لتحويله الى رقم عشان اقدر اجمع 
+totalHours = 0;
+function countHours() {
+    let cureentHours = document.getElementById('cHours').value;
+    let totalHours = Number(0);// لتحويله الى رقم عشان اقدر اجمع 
+    totalHours = 0;
+    for (let index = 0; index < table.querySelectorAll("tbody tr").length; index++) {
+        hour[index].value ?
+            totalHours += parseInt(document.getElementsByClassName('numberOfHours')[index].value)
+            : 0
+
+
+    }
+
+
+    let t = totalHours + cureentHours;
+    let b = parseInt(cureentHours);
+    let sumAllHours = NaN;
+    sumAllHours = totalHours + b;
+    if (isNaN(sumAllHours)) sumAllHours = "";
+    document.getElementById('tHour').innerHTML = '<p " style="font-size: 19px;"> مجموع الساعات : ' + sumAllHours + '</p>'
+
+    return sumAllHours;
+}
+
+// حساب عدد الدرجات الكلي 
+
+function Calgrade() {
+    let allHours = 0;
+    let points = 0;
+    let sumi = 0;
+    let semesterGpa = NaN;
+    let culmutivrGpa = NaN;
+    let sumHours = NaN;
+    let sumPoints = NaN;
+    for (let i = 0; i < table.querySelectorAll("tbody tr").length; i++) {
+        if (x.checked === true) {
+            sumi = ((dgree[i].value - 1) * hour[i].value);
+            points = points + sumi;
+
+            hour[i].value ?
+                allHours += parseInt(hour[i].value)
+                : 0
+        } else {
+
+
+            sumi = (dgree[i].value * hour[i].value);
+            points = points + sumi;
+
+            hour[i].value ?
+                allHours += parseInt(hour[i].value)
+                : 0
+
+
+
+
+
+        }
+    }
+    // حساب المعدل الفصلي 
+    semesterGpa = (points / allHours);
+    if (isNaN(semesterGpa)) semesterGpa = "";
+
+
+
+
+    ///////////////////////////////////////////
+
+    sumPoints = cla(points);
+    sumHours = countHours();
+    culmutivrGpa = sumPoints / sumHours;
+    if (isNaN(culmutivrGpa) || culmutivrGpa === Infinity) culmutivrGpa = "";
+
+    document.getElementById("semGpa").innerHTML = '<p id="semGpa"  style="font-size: 19px;"> معدلك الفصلي :' + semesterGpa.toFixed(2) + " " + gradeing(semesterGpa) + '</p>';
+    document.getElementById('sumPoint').innerHTML = '<p id="sumPoint"  style="font-size: 19px;">عدد النقاط :' + sumPoints.toFixed(2) + '</p>';
+    document.getElementById('culmGpa').innerHTML = '<p id="culmGpa"  style="font-size: 19px;">معدلك التراكمي:' + culmutivrGpa.toFixed(2) + " " + gradeing(culmutivrGpa) + '</p>'
+
+
+}
+
+
+
+////حساب نقاط المعدل الحالي
+
+function cla(a) {
+    let currentPoints = NaN;
+    let cureentGpa = document.getElementById('cGpa').value;
+    let cureentHours = document.getElementById('cHours').value;
+
+
+    currentPoints = cureentGpa * cureentHours;
+    document.getElementById('nido').innerHTML = "النقاط الحالية " + currentPoints.toFixed(2);
+
+    return currentPoints + a;
+}
+// اضافة صف جديد
+var count = 5;
+
+
+function addRow() {
+    if (count <= 0) {
+        count = 1;
+    }
+    var row = document.querySelector("#tb").insertRow(-1);
+    var cell1 = row.insertCell(0);
+    var cell2 = row.insertCell(1);
+    var cell3 = row.insertCell(2);
+
+
+    cell1.innerHTML = '<th class="table lead text-danger"><strong>' + count + '</strong> </th>';
+    cell2.innerHTML = '<select type="number" class="form-control  numberOfHours" oninput=" countHours(),Calgrade()"style = "width: 90px;height: 38px;" ><option value="">الساعات</option> <option value=1 > 1</option ><option value=2 > 2</option > <option value=3 > 3</option ><option value=4 > 4</option > </select >';
+    cell3.innerHTML = '<select class="subjectRating form-control" oninput="Calgrade()" style="width: 98px;"> <option value="">الدرجة</option>   <option option value = 5 > A +| 95 - 100</option > <option value=4.75 > A | 90 - 94</option > <option value=4.5 > B + | 85 - 89</option > <option value=4 > B | 80 - 84</option > <option value=3.5 > C + | 75 - 79</option > <option value=3 > C | 70 - 74</option > <option value=2.5 > D + | 65 - 69</option > <option value=2 > D | 60 - 64</option > <option value=1 > F</option ></select > '
+
+    count++;
+}
+function removeRow() {
+    if (count <= 0) {
+        count = 1;
+    }
+    document.querySelector("#tb").deleteRow(-1);
+
+    count--;
+
+}
+
+// حذف صف جديد
+function gradeing(g) {
+
+    if (x.checked === true) {
+        if (g >= 3.5) {
+            de = "ممتاز";
+        }
+        else if (g >= 2.75) {
+            de = "جيد جداً";
+        }
+        else if (g >= 1.75) {
+            de = "جيد ";
+        }
+        else if (g >= 1) {
+            de = "مقبول ";
+        }
+        return de;
+
+    }
+
+
+    else {
+        if (g >= 4.5) {
+            de = "ممتاز";
+        }
+        else if (g >= 3.75) {
+            de = "جيد جداً";
+        }
+        else if (g >= 2.75) {
+            de = "جيد ";
+        }
+        else if (g >= 2) {
+            de = "مقبول ";
+        }
+        return de;
+
+    }
+
+
+
+
+}
+
+
+
