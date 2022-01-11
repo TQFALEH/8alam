@@ -9,23 +9,23 @@
     "icons": [
       
         {
-            "src": "windows11/SmallTile.scale-150.png",
+            "src": "/windows11/SmallTile.scale-150.png",
             "sizes": "107x107"
         },
         {
-            "src": "windows11/SmallTile.scale-200.png",
+            "src": "/windows11/SmallTile.scale-200.png",
             "sizes": "142x142"
         },
         {
-            "src": "windows11/SmallTile.scale-400.png",
+            "src": "/windows11/SmallTile.scale-400.png",
             "sizes": "284x284"
         },
         {
-            "src": "windows11/Square150x150Logo.scale-100.png",
+            "src": "/windows11/Square150x150Logo.scale-100.png",
             "sizes": "150x150"
         },
         {
-            "src": "windows11/Square150x150Logo.scale-125.png",
+            "src": "/windows11/Square150x150Logo.scale-125.png",
             "sizes": "188x188"
         },
         {
