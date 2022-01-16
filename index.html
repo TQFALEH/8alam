@@ -121,7 +121,7 @@
     <style>
 
     </style>
-    <section>
+    <section data-aos="fade-right">
         <div class="container " id="bn">
             <div class="row">
                 <div class="col-md-6 col-sm-12 mt-3 px-5 flex-column justify-content-center   ">
@@ -333,10 +333,17 @@
     <style>
 
     </style>
-    
-    <footer class=" mb-5 text-white text-center" id="footer">
+    <script>
+        let foo = document.getElementById('footer');
+
+        window.onclick = function (){
+            footer.style.left = 40 + 'px';
+        }
+
+    </script>
+    <footer class=" mb-5 text-white text-center">
         <div class="container">
-            <p class="fs-5 lead">
+            <p class="fs-5 lead"   id="footer">
                 Copyright &copy; 2022 TARIQ ALHARBI
             </p>
             <a target="_blank" href="https://t.me/Rescco"><i class="lab text-light fs-3
