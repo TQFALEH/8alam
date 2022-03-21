@@ -75,6 +75,6 @@
 
     }
 
-    #a{
-        width: 25px;
+    .footerText {
+        letter-spacing:1.5px;
     }
