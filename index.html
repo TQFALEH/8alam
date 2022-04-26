@@ -86,12 +86,7 @@
     </div>
    
     <!--------------------------------------END HERO----------------------------------------------------->
-<div class="container">
-    <div class=" d-flex justify-content-center mx-5">
-        <button class="" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
-            aria-controls="offcanvasRight">Toggle right offcanvas</button>
-    </div>
-</div>
+
     <section>
         <div class="container " id="bn">
             <div class="row">
@@ -383,8 +378,18 @@
     </div>
 </div>    </div>
 </div>
+<script>
+    const play=()=>{
+        let he = document.getElementById('pass');
+        he.play();
+        
+    }
+</script>
     <footer class=" mb-5 text-white text-center">
         <div class="container">
+            <a onclick="play()" class="mb-2 fs-4" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                aria-controls="offcanvasRight"><span class="badge rounded-pill bg-warning text-dark">زعلان من المعدل ؟</span>
+            </a>
             <p class=" footerText fs-6 fw-bold" id="footer">
                 😎Copyright &copy; 2022 | <span>TARIQ ALHARBI</span>
             </p>
@@ -394,6 +399,7 @@
 
     </footer>
 
+    <audio   id="pass"  src="assest/OnlyMP3.to - ياعوز بالله-nvnzJ09l6SE-192k-1650964876334.mp3"></audio>
     <script src="assest/jsOne.js"></script>
     <script src="assest/bootstrap.bundle.min.js"></script>
     <script type="module">
