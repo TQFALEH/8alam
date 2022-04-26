@@ -14,6 +14,7 @@
 
         gtag('config', 'G-6PXN38Q3W0');
     </script>
+
     <head>
         <meta name="description" content="حساب المعدل التراكمي ,احسب معدلك">
     </head>
@@ -26,7 +27,7 @@
         content="جامعة أم القرى,الجامعة الإسلامية,جامعة الإمام محمد بن سعود الإسلامية,جامعة الملك عبد العزيز,جامعة الملك سعود,جامعة الملك فهد للبترول والمعادن,جامعة نايف العربية للعلوم الأمنية,جامعة الملك فيصل,جامعة القصيم,جامعة طيبة,جامعة الطائف,جامعة حائل,جامعة جازان,جامعة الجوف,جامعة الباحة,جامعة تبوك,جامعة نجران,جامعة الحدود الشمالية,جامعة الأميرة نورة بنت عبد الرحمن,جامعة الملك سعود بن عبد العزيز,جامعة الإمام,جامعة الملك عبد الله للعلوم والتقنية,جامعة الأمير سطام بن عبد العزيز,جامعة شقراء,جامعة المجمعة,الجامعة السعودية الالكترونية,جامعة جدة,جامعة بيشة,كلية المدربين التقنيين,جامعة حفر الباطن,كلية الجبيل الصناعية,كلية ينبع الصناعية,كلية ينبع الجامعية">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="assest/bootstrap.min.css">
+    <link rel="stylesheet" href="assest/bootstrap.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com/%22%3E">
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300&display=swap" rel="stylesheet">
@@ -36,7 +37,7 @@
     <meta name="apple-mobile-web-app-status-bar" content="#398b79" />
     <meta name="theme-color" content="#398b79" />
     <link rel="stylesheet" href="assest/style.css">
-    
+
     <title>معدلي</title>
 </head>
 
@@ -54,16 +55,20 @@
     </nav>
     <!----------------------------------#HERO--------------------------------------------->
 
-    </>
+    <script>
+        modChanger = () => {
+            document.getElementById('sound').innerHTML = `
+             
+            `
+        }
+    </script>
     <div>
         <div class="container bg-transpent my-5 px-5" id="bn">
             <div class="bn shadow-lg ">
-                <div id="col1" class="row shadow-lg " style="background-color: var(--main);  border-radius: 20px;
-">
-                    <div
+                <div id="col1" class="row shadow-lg " style="background-color: var(--main);  border-radius: 20px;">
+                    <div 
                         class="col-md-6 col-sm-12 p-3 shadow-lg d-flex  lead d-flex a text-light justify-content-center pt-lg-5 pt-md-5 pt-sm-0 ">
                         <p> احسب معدلك بكل سهولة </p>
-
                     </div>
                     <div
                         class="col-md-6 col-sm-12 lead d-flex  justify-content-evenly  text-light align-content-center">
@@ -79,16 +84,21 @@
         </div>
         <!-- -->
     </div>
-
-
+   
     <!--------------------------------------END HERO----------------------------------------------------->
-
+<div class="container">
+    <div class=" d-flex justify-content-center mx-5">
+        <button class="" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+            aria-controls="offcanvasRight">Toggle right offcanvas</button>
+    </div>
+</div>
     <section>
         <div class="container " id="bn">
             <div class="row">
                 <div class="col-md-6 col-sm-12 mt-3 px-5 flex-column justify-content-center   ">
                     <div class="form-floating mb-3 flex-column mt-md-5 ">
-                        <input type="number" oninput="cla(),Calgrade()" class="form-control " id="cGpa" placeholder=".">
+                        <input type="number" oninput="cla(),Calgrade()" onchange="modChanger()" class="form-control "
+                            id="cGpa" placeholder=".">
                         <label for="">المعدل الحالي</label>
                     </div>
                     <div class="form-floating  ">
@@ -269,7 +279,8 @@
 
                         <div
                             class=" d-flex text-light  bg-transparent  justify-content-md-around  justify-content-evenly">
-                            <h6 id="semGpa" class="" style="font-size: 17px;">معدلك الفصلي :</h6>
+                            <h6 id="semGpa" class="" style="font-size: 17px;">معدلك الفصلي :
+                            </h6>
                             <h6 id="tHour" class=" " style="font-size: 17px;"> مجموع الساعات :</h6>
 
                         </div>
@@ -292,10 +303,86 @@
             </div>
 
     </section>
-    <style>
 
+    <style>
+.offcanvas{
+    background-color:#449b88 ;
+}
+.accordion-btni {
+    position: relative;
+    /* display: flex; */
+    align-items: center;
+    width: 100%;
+    padding: 1rem 1.25rem;
+    font-size: 1rem;
+    color: #212529;
+    text-align: left;
+    background-color: #fff;
+    border: 0;
+    border-radius: 0;
+    overflow-anchor: none;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out,border-radius .15s ease;
+}
     </style>
 
+<div class="offcanvas offcanvas-end shadow-lg" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+    <div class="offcanvas-header">
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        <h5 id="offcanvasRightLabel">Offcanvas right</h5>
+    </div>
+    <div class="offcanvas-body">
+<div class="accordion" id="accordionExample">
+    <div class="accordion-item  bg-transparent" >
+        <h2 class="accordion-header text-center" id="headingOne">
+            <button class="accordion-btni " type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                aria-expanded="true" aria-controls="collapseOne">
+                Accordion Item #1
+            </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body" style="    background-color:#449b88 ;">
+            </div>
+        </div>
+    </div>
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                Accordion Item #2
+            </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+                <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse
+                plugin adds the appropriate classes that we use to style each element. These classes control the overall
+                appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with
+                custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go
+                within the <code>.accordion-body</code>, though the transition does limit overflow.
+                <br>
+                <audio controls  src="assest/أبطال الديجيتال ( الجزء الثالث ) DVD - الخطوة تدفع خطوة.mp3"></audio>
+
+            </div>
+            
+        </div>
+    </div>
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                Accordion Item #3
+            </button>
+        </h2>
+        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              
+            </div>
+        </div>
+    </div>
+</div>    </div>
+</div>
     <footer class=" mb-5 text-white text-center">
         <div class="container">
             <p class=" footerText fs-6 fw-bold" id="footer">
