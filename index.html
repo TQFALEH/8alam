@@ -363,12 +363,14 @@
             </p> -->
 
             <h1 class="my-5 text-center">ممكن اسمعك شي؟</h1>
-            <div class="d-flex justify-content-evenly mt-3">
+            <div id="yesno" class="d-flex justify-content-evenly mt-3">
                 <div>
-                    <button onclick="sing(),play()" class="btn btn-outline-dark fw-bold ">نعم 😎</button>
+                    <button onclick="play(),sing(),hide()" class="btn btn-outline-dark fw-bold sad-button">نعم
+                        😎</button>
                 </div>
                 <div>
-                    <button class="btn btn-outline-dark fw-bold" data-bs-dismiss="offcanvas" aria-label="Close">لا
+                    <button onclick="hide()" class="btn btn-outline-dark fw-bold sad-button" data-bs-dismiss="offcanvas"
+                        aria-label="Close">لا
                         😒</button>
 
                 </div>
@@ -385,6 +387,7 @@
                 </div>
 
             </div>
+            
         </div>
     </div>
     <style>
@@ -405,17 +408,32 @@
             let sound = document.getElementById('pass');
             //   = document.getElementById('pass');
             let a = "https://ve33.aadika.xyz/download/_McjTc1Qp9s/mp3/128/1651117498/ad4323c9bdba8aa7487868d4476271f0d7beaf15b87c11d62559724059965aa8/1?f=X2Download.com";
-            let b = "https://ve33.aadika.xyz/download/_McjTc1Qp9s/mp3/128/1651117498/ad4323c9bdba8aa7487868d4476271f0d7beaf15b87c11d62559724059965aa8/1?f=X2Download.com";
-            let c = "https://ve33.aadika.xyz/download/_McjTc1Qp9s/mp3/128/1651117498/ad4323c9bdba8aa7487868d4476271f0d7beaf15b87c11d62559724059965aa8/1?f=X2Download.com";
-
-            let music = [a, b, c];
+            let b = "https://ve49.aadika.xyz/download/NlBefQp8arI/mp3/64/1651118801/5d38c19b68100671a7d8666d8d1adb7d98380efde2b5d1ff8f7d2e84c025e66f/1?f=X2Download.com";
+            let c = "https://ve37.aadika.xyz/download/GCFsas2EWCw/mp3/64/1651118938/e74ee90317d2b7ec85bca5dd20a71fa80c3c12af6a2feafb2613847586ee70e3/1?f=X2Download.com";
+            let d = "https://ve46.aadika.xyz/download/he8JMjBb76c/mp3/64/1651119173/7bc5fa2961fd0b5a705e5dfc09c8590041ab17cdfe7d522de10c7515b82d8388/1?f=X2Download.com";
+            let e = "https://he32.aadika.xyz/download/aVps7M4DH4s/mp3/64/1651119262/9b843c5d1d8a70d86dcab3fd034d32971cdbb897b87fe30bb9bd32d526cf0625/1?f=X2Download.com"
+            let f = "https://he32.aadika.xyz/download/lU3CnE7GxZc/mp3/64/1651119491/d17d930e788849d650751668ff0b085cd0727df08c9946a7cf7053ad182898ca/1?f=X2Download.com"
+            let g = "https://ve18.aadika.xyz/download/8yHf-RIEiOU/mp3/64/1651119529/5d9e4c5004f617097e9a67f9d31535f7de32dbdb4e0a15ab0d7dba5430cde587/1?f=X2Download.com"
+            let h = "https://ve83.aadika.xyz/download/ZlVFegYA0fo/mp3/64/1651119584/701ff84100a89d5564c8b898f75b869ca5db0d45427a6d7f2e47ae53b469826f/1?f=X2Download.com"
+            let i = "https://ve58.aadika.xyz/download/X1Hu_ms7BuE/mp3/64/1651119654/83d97a258ef27edbd74956f61bcbab66456059359a9251cdd8b7ebfd9b9ae273/1?f=X2Download.com"
+            let j = "https://ve66.aadika.xyz/download/S3ZuPbgiJac/mp3/128/1651119701/b45870e6e4e99908cd81388782aa5fee1b7749b368f27958705f802ad6160d73/1?f=X2Download.com"
+            let k = "https://ve37.aadika.xyz/download/9pGqc4l4Lug/mp3/64/1651119764/a496ff69b51cea0904d1e4c534942c361ddd3b249796d4cf6769a6907f73e1cf/1?f=X2Download.com"
+            let l = 'https://ve17.aadika.xyz/download/1onjKMGZj2M/mp3/64/1651119798/cbf8635309c0d90bc77f5fa2e5ebb2fc2d6dc298a661eac8434deb18f0547369/1?f=X2Download.com';
+            let m = "https://ve18.aadika.xyz/download/lGX-PyweyZ4/mp3/64/1651119923/d8527a22bdeaec6d43c469032342834c568ccbadd1d48bbe9dc08a1bc97a3a16/1?f=X2Download.com"
+            let n = "https://ve33.aadika.xyz/download/fZ_lwj0o9lw/mp3/64/1651120003/8334045b54cea1c1ad747044864290074789e67bac4ce908e9e05135b19f3d85/1?f=X2Download.com"
+            let music = [a, b, c, d, e, f, g, h, i, j, k, l, m, n];
             let ran = Math.floor(Math.random() * music.length);
             sound.innerHTML = `
                 <audio  autoplay src="${music[ran]}"></audio>
 
             `
+        }
+
+        const hide = () => {
+            document.getElementById('yesno').dd.style.display = "none";
 
         }
+
     </script>
     <footer class=" mb-5 text-white text-center">
         <div class="container">
