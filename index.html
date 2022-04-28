@@ -365,7 +365,7 @@
             <h1 class="my-5 text-center">ممكن اسمعك شي؟</h1>
             <div class="d-flex justify-content-evenly mt-3">
                 <div>
-                    <button onclick="sing()" class="btn btn-outline-dark fw-bold ">نعم 😎</button>
+                    <button onclick="sing(),play()" class="btn btn-outline-dark fw-bold ">نعم 😎</button>
                 </div>
                 <div>
                     <button class="btn btn-outline-dark fw-bold" data-bs-dismiss="offcanvas" aria-label="Close">لا
@@ -384,18 +384,14 @@
 
                 </div>
 
-                <!-- <div onclick="rotate()" id="arrow"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40"
-                        fill="#000" class="bi bi-play-circle" viewBox="0 0 16 16">
-                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
-                        <path
-                            d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445z" />
-                    </svg></div> -->
-
-
             </div>
         </div>
     </div>
-
+    <style>
+        #songer {
+            transition: 0.5s ease-in-out;
+        }
+    </style>
     <script>
 
         const sing = () => {
@@ -408,9 +404,9 @@
 
             let sound = document.getElementById('pass');
             //   = document.getElementById('pass');
-            let a = "";
-            let b = "";
-            let c = "";
+            let a = "https://cdn06.yt2api.com/download/_McjTc1Qp9s/mp3/320/1651113812/97e4cf0dc4c1b92008f9804c70abedbef4c18854feab769279ce6f719fae72b5/1";
+            let b = "https://cdn06.yt2api.com/download/_McjTc1Qp9s/mp3/320/1651113812/97e4cf0dc4c1b92008f9804c70abedbef4c18854feab769279ce6f719fae72b5/1";
+            let c = "https://cdn06.yt2api.com/download/_McjTc1Qp9s/mp3/320/1651113812/97e4cf0dc4c1b92008f9804c70abedbef4c18854feab769279ce6f719fae72b5/1";
 
             let music = [a, b, c];
             let ran = Math.floor(Math.random() * music.length);
@@ -423,9 +419,10 @@
     </script>
     <footer class=" mb-5 text-white text-center">
         <div class="container">
-            <a onclick="play()" class="mb-2 fs-4" type="button" data-bs-toggle="offcanvas"
-                data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><span
-                    class="badge rounded-pill bg-warning bg-warning text-dark">زعلك المعدل ؟ 🤕</span>
+            <a onclick="" class="mb-2 fs-4" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                aria-controls="offcanvasRight"><span
+                    class="badge rounded-pill bg-warning bg-warning text-center text-dark p-sm-3 p-md-2">زعلك المعدل ؟
+                    🤕</span>
             </a>
             <p class=" footerText fs-6 fw-bold " id="footer">
                 😎Copyright &copy; 2022 | <span>TARIQ ALHARBI</span>
