@@ -387,7 +387,12 @@
                 </div>
 
             </div>
-            
+            <div id="changesong" class="text-center" style="display: none;">
+                <button onclick="play()" class="btn btn-outline-dark fw-bold sad-button" >
+                اغيرها لك ؟ 🎷
+                    </button>
+            </div>
+
         </div>
     </div>
     <style>
@@ -401,6 +406,7 @@
             let ani = document.getElementById('songer');
             ani.style.display = "block";
         }
+
     </script>
     <script>
         const play = () => {
@@ -426,13 +432,14 @@
             sound.innerHTML = `
                 <audio  autoplay src="${music[ran]}"></audio>
 
+    
             `
+            let change = document.getElementById('changesong');
+            change.style.display = "block";
+            
         }
 
-        const hide = () => {
-            document.getElementById('yesno').dd.style.display = "none";
-
-        }
+      
 
     </script>
     <footer class=" mb-5 text-white text-center">
@@ -459,7 +466,7 @@
     </div>
     <style>
         .sad-button {
-            transition: 0.2s ease-in-out;
+            transition: 0.5s ease-in-out;
         }
 
         .sad-button:hover {
