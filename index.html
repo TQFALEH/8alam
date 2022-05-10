@@ -331,9 +331,15 @@
 
     <style>
         .offcanvas {
-            background-color: #398b79d6;
+            /* background-color: #398b79d6; */
             border: 2px currentColor rgba(255, 255, 255, 0.7);
+
             border-radius: 2px;
+            background-image: url('imgggg/lilo.svg');
+            background-size: cover;
+            max-width: 100%;
+            height: auto;
+
         }
 
         #b-title {
@@ -347,7 +353,6 @@
             font-weight: 700;
         }
     </style>
-
     <div class="offcanvas offcanvas-end shadow-lg rounded p-2 " id="offcanvasRight"
         aria-labelledby="offcanvasRightLabel">
         <div class="offcanvas-header">
@@ -355,21 +360,22 @@
             <!-- <h5 id="offcanvasRightLabel">Offcanvas right</h5> -->
         </div>
         <div class="offcanvas-body ">
-            <!-- <p class="lead p-3 text-end">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae hic illum sit
-                aspernatur
-            </p> -->
-            <div id="afterChoose">
-                <h1 id="b-title" class="my-5 text-center">ممكن اسمعك شي؟</h1>
-                <div id="yesno" class="d-flex justify-content-evenly mt-3">
+            
+            <div id="afterChoose" style="margin-top:13rem">
+
+                <h1 id="b-title" class="text-center">ممكن <br>
+                    اسمعك <br>شي؟</h1>
+
+                <div id="yesno" class="d-flex justify-content-evenly mt-4">
                     <div>
-                        <button onclick="play(),sing(),afterYEs()" class="btn sad btn-outline-light fw-bold sad-button">نعم
+                        <button onclick="play(),sing(),afterYEs()"
+                            class="btn sad btn-outline-light fw-bold sad-button">نعم
                             😎</button>
                     </div>
                     <div>
                         <button onclick="hide()" class="btn sad btn-outline-light fw-bold sad-button"
                             data-bs-dismiss="offcanvas" aria-label="Close">لا
                             😒</button>
-
                     </div>
 
                 </div>
@@ -426,7 +432,7 @@
                 }
             </style>
             <div id="changesong" class="text-center" style="display: none;">
-                <button onclick="play()" class="btn btn-outline-light fw-bold sad-button">
+                <button onclick="play()" class="btn btn-outline-light fw-bold ">
                     اغيرها لك ؟ 🎷
                 </button>
             </div>
@@ -434,12 +440,10 @@
     </div>
 
     <script>
-
         const sing = () => {
             let ani = document.getElementById('songer');
             ani.style.display = "block";
         }
-
     </script>
     <script>
         const play = () => {
