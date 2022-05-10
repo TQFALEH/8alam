@@ -331,23 +331,20 @@
 
     <style>
         .offcanvas {
-            background-color: #fff;
+            background-color: #398b79d6;
+            border: 2px currentColor rgba(255, 255, 255, 0.7);
+            border-radius: 2px;
         }
 
-        .accordion-btni {
-            position: relative;
-            /* display: flex; */
-            align-items: center;
-            width: 100%;
-            padding: 1rem 1.25rem;
-            font-size: 1rem;
-            color: #212529;
-            text-align: left;
-            background-color: #fff;
-            border: 0;
-            border-radius: 0;
-            overflow-anchor: none;
-            transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out, border-radius .15s ease;
+        #b-title {
+            font-weight: 700;
+            color: #f3f0eb;
+        }
+
+        .sad {
+            font-size: 1.5rem;
+            padding: 5px 9px;
+            font-weight: 700;
         }
     </style>
 
@@ -362,14 +359,14 @@
                 aspernatur
             </p> -->
             <div id="afterChoose">
-                <h1 class="my-5 text-center">ممكن اسمعك شي؟</h1>
+                <h1 id="b-title" class="my-5 text-center">ممكن اسمعك شي؟</h1>
                 <div id="yesno" class="d-flex justify-content-evenly mt-3">
                     <div>
-                        <button onclick="play(),sing(),afterYEs()" class="btn btn-outline-dark fw-bold sad-button">نعم
+                        <button onclick="play(),sing(),afterYEs()" class="btn sad btn-outline-light fw-bold sad-button">نعم
                             😎</button>
                     </div>
                     <div>
-                        <button onclick="hide()" class="btn btn-outline-dark fw-bold sad-button"
+                        <button onclick="hide()" class="btn sad btn-outline-light fw-bold sad-button"
                             data-bs-dismiss="offcanvas" aria-label="Close">لا
                             😒</button>
 
@@ -409,14 +406,15 @@
                         transform: translateX(0rem);
                     }
                 }
-                #changesong{
-                   transition: 0.3s ease-in-out;
+
+                #changesong {
+                    transition: 0.3s ease-in-out;
                     transform: translateX(0rem);
                     animation-name: exampleOne;
                     animation-duration: 1.5s;
- 
+
                 }
-                
+
                 @keyframes exampleOne {
                     0% {
                         transform: translateX(-10rem)
@@ -428,7 +426,7 @@
                 }
             </style>
             <div id="changesong" class="text-center" style="display: none;">
-                <button onclick="play()" class="btn btn-outline-dark fw-bold sad-button">
+                <button onclick="play()" class="btn btn-outline-light fw-bold sad-button">
                     اغيرها لك ؟ 🎷
                 </button>
             </div>
