@@ -361,50 +361,74 @@
             <!-- <p class="lead p-3 text-end">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae hic illum sit
                 aspernatur
             </p> -->
+            <div id="afterChoose">
+                <h1 class="my-5 text-center">ممكن اسمعك شي؟</h1>
+                <div id="yesno" class="d-flex justify-content-evenly mt-3">
+                    <div>
+                        <button onclick="play(),sing(),afterYEs()" class="btn btn-outline-dark fw-bold sad-button">نعم
+                            😎</button>
+                    </div>
+                    <div>
+                        <button onclick="hide()" class="btn btn-outline-dark fw-bold sad-button"
+                            data-bs-dismiss="offcanvas" aria-label="Close">لا
+                            😒</button>
 
-            <h1 class="my-5 text-center">ممكن اسمعك شي؟</h1>
-            <div id="yesno" class="d-flex justify-content-evenly mt-3">
-                <div>
-                    <button onclick="play(),sing(),hide()" class="btn btn-outline-dark fw-bold sad-button">نعم
-                        😎</button>
+                    </div>
+
                 </div>
-                <div>
-                    <button onclick="hide()" class="btn btn-outline-dark fw-bold sad-button" data-bs-dismiss="offcanvas"
-                        aria-label="Close">لا
-                        😒</button>
-
-                </div>
-
             </div>
+            <script>
+                afterYEs = () => {
+                    document.getElementById('afterChoose').style.display = 'none';
+                }
+            </script>
+
             <div class="d-flex justify-content-center align-content-center align-items-center p-3 mt-4 ">
                 <div id="songer" class="" style="display:none">
-
                     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
                     <lottie-player src="https://assets2.lottiefiles.com/packages/lf20_c7eyj1u9.json"
                         background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay>
                     </lottie-player>
-
                 </div>
-
             </div>
+            <style>
+                #songer {
+                    transition: 0.3s ease-in-out;
+                    transform: translateX(0rem);
+                    animation-name: example;
+                    animation-duration: 2s;
+
+                }
+
+                @keyframes example {
+                    0% {
+                        transform: translateX(10rem)
+                    }
+
+                    100% {
+                        transform: translateX(0rem);
+                    }
+                }
+            </style>
             <div id="changesong" class="text-center" style="display: none;">
-                <button onclick="play()" class="btn btn-outline-dark fw-bold sad-button" >
-                اغيرها لك ؟ 🎷
-                    </button>
+                <button onclick="play()" class="btn btn-outline-dark fw-bold sad-button">
+                    اغيرها لك ؟ 🎷
+                </button>
             </div>
 
         </div>
     </div>
-    <style>
-        #songer {
-            transition: 0.3s ease-in-out;
-        }
-    </style>
+
     <script>
 
         const sing = () => {
             let ani = document.getElementById('songer');
             ani.style.display = "block";
+            ani.style.animation = `     @keyframes example {
+  0%   {transform: translateX(10rem)}
+  50%  {transform: translateX(5rem)}
+  100% {transform: translateX(0rem);}
+}`
         }
 
     </script>
@@ -417,29 +441,25 @@
             let b = "https://sndup.net/czkw/d";
             let c = "https://sndup.net/w5q8/d";
             let d = "https://sndup.net/sm6r/d";
-            let e = "https://sndup.net/bznb/d"
-            let f = "https://sndup.net/zk7j/d"
-            let g = "https://sndup.net/n4wc/d"
-            let h = "https://sndup.net/q6y7/d"
-            let i = "https://sndup.net/xnrt/d"
-            let j = "https://sndup.net/p9wh/d"
-            let k = "https://sndup.net/ty26/d"
+            let e = "https://sndup.net/bznb/d";
+            let f = "https://sndup.net/zk7j/d";
+            let g = "https://sndup.net/n4wc/d";
+            let h = "https://sndup.net/q6y7/d";
+            let i = "https://sndup.net/xnrt/d";
+            let j = "https://sndup.net/p9wh/d";
+            let k = "https://sndup.net/ty26/d";
             let l = "https://sndup.net/m5dp/d";
-            let m = "https://sndup.net/k3db/d"
-            let n = "https://sndup.net/nbzm/d"
-            let music = [a, b, c, d, e, f, g, h, i,j,k,l,m,n];
+            let m = "https://sndup.net/k3db/d";
+            let n = "https://sndup.net/nbzm/d";
+            let music = [a, b, c, d, e, f, g, h, i, j, k, l, m, n];
             let ran = Math.floor(Math.random() * music.length);
-            sound.innerHTML = `
-                <audio  autoplay src="${music[ran]}"></audio>
-
-    
-            `
+            sound.innerHTML = ` <audio  autoplay src="${music[ran]}"></audio>  `
             let change = document.getElementById('changesong');
             change.style.display = "block";
-            
+
         }
 
-      
+
 
     </script>
     <footer class=" mb-5 text-white text-center">
