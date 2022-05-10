@@ -396,7 +396,7 @@
                     transition: 0.3s ease-in-out;
                     transform: translateX(0rem);
                     animation-name: example;
-                    animation-duration: 2s;
+                    animation-duration: 1.5s;
 
                 }
 
@@ -409,13 +409,29 @@
                         transform: translateX(0rem);
                     }
                 }
+                #changesong{
+                   transition: 0.3s ease-in-out;
+                    transform: translateX(0rem);
+                    animation-name: exampleOne;
+                    animation-duration: 1.5s;
+ 
+                }
+                
+                @keyframes exampleOne {
+                    0% {
+                        transform: translateX(-10rem)
+                    }
+
+                    100% {
+                        transform: translateX(0rem);
+                    }
+                }
             </style>
             <div id="changesong" class="text-center" style="display: none;">
                 <button onclick="play()" class="btn btn-outline-dark fw-bold sad-button">
                     اغيرها لك ؟ 🎷
                 </button>
             </div>
-
         </div>
     </div>
 
@@ -424,11 +440,6 @@
         const sing = () => {
             let ani = document.getElementById('songer');
             ani.style.display = "block";
-            ani.style.animation = `     @keyframes example {
-  0%   {transform: translateX(10rem)}
-  50%  {transform: translateX(5rem)}
-  100% {transform: translateX(0rem);}
-}`
         }
 
     </script>
