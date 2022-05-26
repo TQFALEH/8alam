@@ -4,7 +4,7 @@ const bodytxt = document.getElementById('t-body');
 const txtbody = 'منصة تقدم خدمات  متجددة للطلاب ';
 let idx = 1
 let idxx = 1
-setInterval(writeText, 100);
+setInterval(writeText, 80 );
 
 function writeText() {
     txt.innerText = prog.slice(0, idx);
