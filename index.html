@@ -367,7 +367,7 @@
     <div class="offcanvas offcanvas-end shadow-lg rounded p-2 " id="offcanvasRight"
         aria-labelledby="offcanvasRightLabel">
         <div class="offcanvas-header">
-            <button onclick="clear()" type="button" class="btn-close text-white text-reset" data-bs-dismiss="offcanvas"
+            <button onclick="hidee()" type="button" class="btn-close text-white text-reset" data-bs-dismiss="offcanvas"
                 aria-label="Close"></button>
             <!-- <h5 id="offcanvasRightLabel">Offcanvas right</h5> -->
         </div>
@@ -387,7 +387,7 @@
                             😎</button>
                     </div>
                     <div>
-                        <button onclick="hide(),clear()" class="btn sad btn-outline-light fw-bold sad-button"
+                        <button onclick="hide()" class="btn sad btn-outline-light fw-bold sad-button"
                             data-bs-dismiss="offcanvas" aria-label="Close">لا
                             😒</button>
                     </div>
@@ -467,7 +467,7 @@
         const msg = () => {
             const txt = document.getElementById('txt');
             const ask = document.getElementById('b-title');
-            const prog = 'ستتخطى بعون المُعين صعوباتك ستتجاوز همومك وآلامك وربك لن ينسى تضحياتك ';
+            const prog = '❤ ستتخطى بعون المُعين صعوباتك ستتجاوز همومك وآلامك وربك لن ينسى تضحياتك ';
             const askTxt = `ممكن اسمعك شي؟ `;
             const ans = document.getElementById('yesno');
             let idx = 1;
@@ -488,14 +488,22 @@
                        `
                     }
                 }
-                
+
 
 
             }
         }
 
-        function clear() {
-            document.getElementById('bbbb').replaceChildren()
+        function hidee() {
+
+             setInterval(hideme, 1000);
+             function hideme() {
+                 const tbbt = document.getElementById('areyousad')
+                 tbbt.style.display = 'none';
+             }
+
+
+
         }
     </script>
     <script>
@@ -530,7 +538,7 @@
     </script>
     <footer class=" mb-5 text-white text-center">
         <div class="container">
-            <a onclick="clear(),msg()" class="mb-2 fs-4" type="button" data-bs-toggle="offcanvas"
+            <a onclick="hidee(),msg()" class="mb-2 fs-4" id="areyousad" type="button" data-bs-toggle="offcanvas"
                 data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><span
                     class="badge sad-button rounded-pill bg-warning bg-warning text-center text-dark p-sm-3 p-md-2">زعلك
                     المعدل ؟
