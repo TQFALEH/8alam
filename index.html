@@ -37,7 +37,6 @@
     <meta name="apple-mobile-web-app-status-bar" content="#398b79" />
     <meta name="theme-color" content="#398b79" />
     <link rel="stylesheet" href="assest/style.css">
-    <link rel="stylesheet" href="/assest/bootstrap.min.css">
 
     <title>معدلي</title>
 </head>
@@ -388,6 +387,7 @@
                 }
             </script>
 
+            <audio style="display: none;" autoplay loop id="pass" src=""></audio>
             <div class="d-flex justify-content-center align-content-center align-items-center p-3 "
                 style="margin-top: 9rem">
                 <div id="songer" class="" style="display:none">
@@ -446,6 +446,7 @@
         const sing = () => {
             let ani = document.getElementById('songer');
             ani.style.display = "block";
+
         }
     </script>
     <script>
@@ -478,26 +479,24 @@
 
 
     </script>
-    <footer class=" mb-5 text-white text-center ">
+    <footer class=" mb-5 text-white text-center">
         <div class="container">
-            <!-- <a onclick="" class="mb-2 fs-4" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+            <a onclick="" class="mb-2 fs-4" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
                 aria-controls="offcanvasRight"><span
                     class="badge sad-button rounded-pill bg-warning bg-warning text-center text-dark p-sm-3 p-md-2">زعلك
                     المعدل ؟
                     🤕</span>
-            </a> -->
-            <p class="  fs-6 fw-bold badge sad-button rounded-pill bg-warning bg-warning text-center text-dark p-sm-3 p-md-2" id="footer">
-                <!-- 😎Copyright &copy; 2022 | <span>TARIQ ALHARBI</span> -->
-                Copyright &copy; 2022
+            </a>
+            <p class=" footerText fs-6 fw-bold " id="footer">
+                😎Copyright &copy; 2022 | <span>TARIQ ALHARBI</span>
             </p>
-            <!-- <a id="footer-link" target="_blank" rel='#' href="https://t.me/Rescco"><img
-                    src="imgggg/icons8-telegram-app-30.svg" width="30" height="30" alt="#"></a> -->
+            <a id="footer-link" target="_blank" rel='#' href="https://t.me/Rescco"><img
+                    src="imgggg/icons8-telegram-app-30.svg" width="30" height="30" alt="#"></a>
         </div>
 
     </footer>
 
 
-   
     <script src="assest/jsOne.js"></script>
     <script src="assest/bootstrap.bundle.min.js"></script>
     <script type="module">
@@ -516,7 +515,7 @@
         const el = document.createElement('pwa-update');
         document.body.appendChild(el);
     </script>
-  
+
 </body>
 
 </html>
