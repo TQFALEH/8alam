@@ -353,22 +353,24 @@
             font-weight: 700;
         }
     </style>
-    <div class="offcanvas offcanvas-end shadow-lg rounded p-2 " id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+    <div class="offcanvas offcanvas-end shadow-lg rounded p-2 " id="offcanvasRight"
+        aria-labelledby="offcanvasRightLabel">
         <div class="offcanvas-header">
             <button type="button" class="btn-close text-white text-reset" data-bs-dismiss="offcanvas"
                 aria-label="Close"></button>
             <!-- <h5 id="offcanvasRightLabel">Offcanvas right</h5> -->
         </div>
         <div class="offcanvas-body ">
-    
+
             <div id="afterChoose" style="margin-top:16rem">
-    
+
                 <h1 id="b-title" class="text-center">ممكن <br>
                     اسمعك <br>شي؟</h1>
-    
+
                 <div id="yesno" class="d-flex justify-content-evenly mt-4">
                     <div>
-                        <button onclick="play(),sing(),afterYEs()" class="btn sad btn-outline-light fw-bold sad-button">نعم
+                        <button onclick="play(),sing(),afterYEs()"
+                            class="btn sad btn-outline-light fw-bold sad-button">نعم
                             😎</button>
                     </div>
                     <div>
@@ -376,7 +378,7 @@
                             data-bs-dismiss="offcanvas" aria-label="Close">لا
                             😒</button>
                     </div>
-    
+
                 </div>
             </div>
             <script>
@@ -384,8 +386,7 @@
                     document.getElementById('afterChoose').style.display = 'none';
                 }
             </script>
-    
-    <audio style="display: none;" autoplay loop id="pass"  src=""></audio>
+
             <div class="d-flex justify-content-center align-content-center align-items-center p-3 "
                 style="margin-top: 9rem">
                 <div id="songer" class="" style="display:none">
@@ -401,32 +402,32 @@
                     transform: translateX(0rem);
                     animation-name: example;
                     animation-duration: 1.5s;
-    
+
                 }
-    
+
                 @keyframes example {
                     0% {
                         transform: translateX(10rem)
                     }
-    
+
                     100% {
                         transform: translateX(0rem);
                     }
                 }
-    
+
                 #changesong {
                     transition: 0.3s ease-in-out;
                     transform: translateX(0rem);
                     animation-name: exampleOne;
                     animation-duration: 1.5s;
-    
+
                 }
-    
+
                 @keyframes exampleOne {
                     0% {
                         transform: translateX(-10rem)
                     }
-    
+
                     100% {
                         transform: translateX(0rem);
                     }
@@ -439,12 +440,11 @@
             </div>
         </div>
     </div>
-    
+
     <script>
         const sing = () => {
             let ani = document.getElementById('songer');
-             ani.style.display = "block";
-
+            ani.style.display = "block";
         }
     </script>
     <script>
@@ -477,22 +477,24 @@
 
 
     </script>
-<footer class=" mb-5 text-white text-center">
-    <div class="container">
-        <a onclick="" class="mb-2 fs-4" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
-            aria-controls="offcanvasRight"><span
-                class="badge sad-button rounded-pill bg-warning bg-warning text-center text-dark p-sm-3 p-md-2">زعلك
-                المعدل ؟
-                🤕</span>
-        </a>
-        <p class=" footerText fs-6 fw-bold " id="footer">
-            😎Copyright &copy; 2022 | <span>TARIQ ALHARBI</span>
-        </p>
-        <a id="footer-link" target="_blank" rel='#' href="https://t.me/Rescco"><img
-                src="imgggg/icons8-telegram-app-30.svg" width="30" height="30" alt="#"></a>
-    </div>
+    <footer class=" mb-5 text-white text-center ">
+        <div class="container">
+            <!-- <a onclick="" class="mb-2 fs-4" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                aria-controls="offcanvasRight"><span
+                    class="badge sad-button rounded-pill bg-warning bg-warning text-center text-dark p-sm-3 p-md-2">زعلك
+                    المعدل ؟
+                    🤕</span>
+            </a> -->
+            <p class="  fs-6 fw-bold badge sad-button rounded-pill bg-warning bg-warning text-center text-dark p-sm-3 p-md-2" id="footer">
+                <!-- 😎Copyright &copy; 2022 | <span>TARIQ ALHARBI</span> -->
+                Copyright &copy; 2022
+            </p>
+            <!-- <a id="footer-link" target="_blank" rel='#' href="https://t.me/Rescco"><img
+                    src="imgggg/icons8-telegram-app-30.svg" width="30" height="30" alt="#"></a> -->
+        </div>
 
-</footer>
+    </footer>
+
 
    
     <script src="assest/jsOne.js"></script>
