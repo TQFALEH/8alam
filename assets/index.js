@@ -28,5 +28,5 @@ function writeText() {
         }
         const kk = () => {
         let t = document.getElementById('tabels');
-    t.remove();
+    t.remove()
         }
