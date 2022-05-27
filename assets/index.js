@@ -1,7 +1,7 @@
 const txt = document.getElementById('title');
 const prog = 'قلم';
 const bodytxt = document.getElementById('t-body');
-const txtbody = 'منصة تقدم خدمات  متجددة للطلاب ';
+const txtbody = 'منصة تقدم خدمات  متجددة للطلاب 👍';
 let idx = 1
 let idxx = 1
 setInterval(writeText, 80 );

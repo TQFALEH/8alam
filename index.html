@@ -14,6 +14,8 @@
     <link rel="stylesheet" href="assets/bootstrap.min.css">
     <link rel="stylesheet" href="assets/stylePlan.css">
     <link rel="stylesheet" href="assets/planner.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 
 
 
@@ -45,120 +47,100 @@
     }
 </style>
 
-<body onload="myFunction()">
-    <div id="loader">
-        <div class="row d-flex justify-content-center  mt-5 mx-5 p-5">
-            <div class="d-flex justify-content-center ">
-                <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-                <lottie-player src="https://assets2.lottiefiles.com/packages/lf20_jea1amq5.json"
-                    background="transparent" speed="1" style="width: 200; height: 300px;" loop autoplay>
-                </lottie-player>
-            </div>
-            <div class="badge nino bg-warning text-dark p-4 text-center">اهلا و سهلا ❤ </div>
-        </div>
-    </div>
-<section id="bb" style="display: none;">
-    <nav class="navbar  shadow-lg  " style="background-color:var(--main);">
-        <div class="container">
-            <a class="navbar-brand text-white " id="logo" href="https://8alam.com">
-                قلم
-                <script src="https://cdn.lordicon.com/lusqsztk.js"></script>
-                <lord-icon src="https://cdn.lordicon.com/wloilxuq.json" trigger="loop"
-                    colors="primary:#ffffff,secondary:#08a88a" style="width:60px;height:60px">
-                </lord-icon>
-            </a>
-    </nav>
-    <!--END NAVBAR -->
-    <section>
-        <div class="container">
-            <div class="mt-5">
-                <div class="row d-flex justify-content-around  align-items-center ">
-                    <div class="col-6   text-center overflow-hidden mt-3">
-                        <h1 id="title" class="display-1"></h1>
-                        <br>
-                        <p id="t-body" class="display-6"></p>
-                    </div>
-                    <!-- <div class=" col-6 ">
+<body >
+ 
+        <nav class="navbar  shadow-lg  " style="background-color:var(--main);">
+            <div class="container">
+                <a class="navbar-brand text-white " id="logo" href="https://8alam.com">
+                    قلم
+                    <script src="https://cdn.lordicon.com/lusqsztk.js"></script>
+                    <lord-icon src="https://cdn.lordicon.com/wloilxuq.json" trigger="loop"
+                        colors="primary:#ffffff,secondary:#08a88a" style="width:60px;height:60px">
+                    </lord-icon>
+                </a>
+        </nav>
+        <!--END NAVBAR -->
+        <section>
+            <div class="container">
+                <div class="mt-5">
+                    <div class="row d-flex justify-content-around  align-items-center ">
+                        <div class="col-6   text-center overflow-hidden mt-3">
+                            <h1 id="title" class="display-1"></h1>
+                            <br>
+                            <p id="t-body" class="display-6"></p>
+                        </div>
+                        <!-- <div class=" col-6 ">
                         <iframe width="150px" height="150px" src="https://embed.lottiefiles.com/animation/105037"></iframe>
                     </div> -->
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <style>
-        .bocx {
-            border-radius: 25px;
-            background-color: #398b79;
-            max-width: 628px;
-            height: 172px;
-        }
+        </section>
+        <style>
+            .bocx {
+                border-radius: 25px;
+                background-color: #398b79;
+                max-width: 628px;
+                height: 172px;
+            }
 
-        .title-c {
-            font-size: 20px;
-            font-weight: 800;
-            color: antiquewhite;
-        }
+            .title-c {
+                font-size: 20px;
+                font-weight: 800;
+                color: antiquewhite;
+            }
 
-        #row {
-            margin-top: 20%;
-        }
-    </style>
-    <div id="row">
-        <div class="container">
-            <div class="row  ">
-                <div class="col-md-4 col-sm-12 p-3 text-center">
-                    <div class="bocx  pb-5 shadow-lg"><a class="text-decoration-none" href="planner.html"><img
-                                src="running.svg" height="100%" alt="">
-                            <h3 class="text-center mt-2 title-c"> تخرج اسرع </h3>
-                        </a></div>
+            #row {
+                margin-top: 20%;
+            }
+        </style>
+        <div id="row">
+            <div class="container">
+                <div class="row  ">
+                    <div data-aos="fade-right" data-aos-offset="500" data-aos-easing="ease-in-sine "
+                        class="col-md-4 col-sm-12 p-3 text-center">
+                        <div class="bocx  pb-5 shadow-lg"><a class="text-decoration-none" href="planner.html"><img
+                                    src="running.svg" height="100%" alt="">
+                                <h3 class="text-center mt-2 title-c"> تخرج اسرع </h3>
+                            </a></div>
 
-                </div>
-                <div class="col-md-4 col-sm-12 p-3 text-center">
-                    <div class="bocx p-3  shadow-lg"><a class="text-decoration-none" href="gpa.html"><img
-                                class="img-fluid" src="calculator.png" width="100px" height="100px" alt="">
-                            <h3 class="text-center mt-3 title-c ">حساب المعدل</h3>
-                        </a></div>
+                    </div>
+                    <div data-aos="fade-left" data-aos-offset="500" data-aos-easing="ease-in-sine " class="col-md-4 col-sm-12 p-3 text-center">
+                        <div class="bocx p-3  shadow-lg"><a class="text-decoration-none" href="gpa.html"><img
+                                    class="img-fluid" src="calculator.png" width="100px" height="100px" alt="">
+                                <h3 class="text-center mt-3 title-c ">حساب المعدل</h3>
+                            </a></div>
 
-                </div>
-                <div class="col-md-4 col-sm-12 p-3 text-center">
-                    <div class="bocx p-3  shadow-lg"><a class="text-decoration-none" href="planner.html"><img
-                                class="img-fluid" src="power (1).svg" alt="">
-                            <h3 class="text-center mt-3 title-c">التصويت - قريبا</h3>
-                        </a></div>
+                    </div>
+                    <div data-aos="fade-right" data-aos-offset="500" data-aos-easing="ease-in-sine " class="col-md-4 col-sm-12 p-3 text-center">
+                        <div class="bocx p-3  shadow-lg"><a class="text-decoration-none" href="planner.html"><img
+                                    class="img-fluid" src="power (1).svg" alt="">
+                                <h3 class="text-center mt-3 title-c">التصويت - قريبا</h3>
+                            </a></div>
 
+                    </div>
                 </div>
             </div>
-        </div>
 
-    </div>
-    <!--
+        </div>
+        <!--
 
         -->
 
-    <footer class=" mb-5 text-white text-center my-5 ">
+        <footer class=" mb-5 text-white text-center my-5 ">
 
-        <p class=" footerText fs-4 fw-bold " id="footer">
-            😎 Copyright &copy; 2022
-        </p>
-        <a id="footer-link" target="_blank" rel='#' href="https://t.me/Rescco"><img
-                src="imgggg/icons8-telegram-app-30.svg" width="30" height="30" alt="#"></a>
+            <p class=" footerText fs-4 fw-bold " id="footer">
+                😎 Copyright &copy; 2022
+            </p>
+            <a id="footer-link" target="_blank" rel='#' href="https://t.me/Rescco"><img
+                    src="imgggg/icons8-telegram-app-30.svg" width="30" height="30" alt="#"></a>
 
-    </footer>
+        </footer>
     </section>
     <script src="assets/index.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-          function myFunction() {
-                myVar = setTimeout(ss, 2500);
-            }
-            const ss = () => {
-                document.getElementById("loader").style.display = "none";
-                document.getElementById("bb").style.display = "block";
-            }
-            const kk = () => {
-                let t = document.getElementById('tabels');
-                t.remove()
-            }
-
+        AOS.init();
     </script>
 </body>
 
