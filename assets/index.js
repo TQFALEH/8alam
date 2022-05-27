@@ -19,14 +19,4 @@ function writeText() {
 }
 
 
-    function myFunction() {
-        myVar = setTimeout(ss, 2500);
-        }
-        const ss = () => {
-        document.getElementById("loader").style.display = "none";
-    document.getElementById("bb").style.display = "block";
-        }
-        const kk = () => {
-        let t = document.getElementById('tabels');
-    t.remove()
-        }
+  
