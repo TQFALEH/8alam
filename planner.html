@@ -87,7 +87,7 @@
         </div>
     </div>
 
-    <section id="bb" style="display:none;">
+    <section id="bb" style="display:block;">
         <!----------------------------------#START NAVBAR--------------------------------------------->
         <nav class="navbar shadow-lg mb-sm-5 ">
             <div class="container">
@@ -534,16 +534,16 @@
             <div class=" d-flex justify-content-center mt-5 mb-2  mx-2 ">
                 <a data-bs-toggle="offcanvas" id="btn-one" data-bs-target="#offcanvasBottom"
                     aria-controls="offcanvasBottom" onclick="m8t(),checkedHours(),sortAll()"
-                    class="btn btn-outline-light mx-2 btbn d-flex justify-content-around btn"> المقترح القادم
+                    class=" mx-2 btbn  btn"> المقترح القادم
                 </a>
                 <div><a data-bs-toggle="offcanvas" id="send-btn" data-bs-target="#offcanvasBottom"
                         aria-controls="offcanvasBottom" onclick="m8(),checkedHours(),hehe(),so() "
-                        class="btn btn-outline-light  btbn btn">الخطة كاملة
+                        class="  btbn btn">الخطة كاملة
                     </a>
                 </div>
                 <div><a data-bs-toggle="offcanvas" id="send-btn" data-bs-target="#offcanvasBottom"
                         aria-controls="offcanvasBottom" onclick="m8tt(),sortAllWith()"
-                        class="btn btn-outline-light btbn mx-2 p  btn"> مواد متاحة لك
+                        class="t btbn mx-2 p  btn"> مواد متاحة لك
                     </a>
                 </div>
             </div>
@@ -586,8 +586,22 @@
                 }
 
                 .btbn {
-                    width: 100px;
-                    height: 62px;
+                   padding: 15px;
+                    border-radius: 20px;
+                    color: black;
+                    border: none;
+                    font-weight: 900;
+                    background-color: #ffc107;
+                    
+
+                }
+                .btbn:hover{
+                   padding: 15px;
+                    border-radius: 20px;
+                    color: black;
+                    border: none;
+                    font-weight: 800;
+                    background-color: #e9b1098e;
 
                 }
             </style>
@@ -616,7 +630,7 @@
                         </div>
                     </div>
                     <div class="d-flex justify-content-center align-content-around my-5  p-2">
-                        <button id="a4" onclick="display()" class="btn btn-outline-light btbn ms-2">[ تنزيل نسخة <i
+                        <button id="a4" onclick="display()" class=" btbn ">[ تنزيل نسخة <i
                                 class="bi bi-download"></i> ] </button>
 
 
